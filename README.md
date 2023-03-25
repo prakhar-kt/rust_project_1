@@ -1,1 +1,1 @@
-# rust_project_1
+# rust_projects
