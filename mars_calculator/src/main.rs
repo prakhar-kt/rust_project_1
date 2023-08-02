@@ -1,5 +1,16 @@
+use std::io;
+
 fn main() {
-    println!("Weight on Mars: {}", calculate_weight_on_mars(100.0));
+
+    let mut input = String::new();
+
+    io::stdin().read_line(&mut input).unwrap();
+
+    let weight: f32 = input.trim().parse().unwrap();
+
+    let  mars_weight = calculate_weight_on_mars(weight);
+    
+    println!("Weight on Mars: {}", mars_weight);
     
     // calculate_weight_on_mars(100.0);
 }
